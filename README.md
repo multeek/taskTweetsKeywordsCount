@@ -33,22 +33,27 @@ The following tools/software/servers should be already installed and properly co
 
 # How to run/test the task/project:
 1. Navigate into your project directory
+    
     ```sh
     cd {PATH_WHERE_THE_PROJECT_HAS_BEEN_CLONED}/taskTweetsKeywordsCount
     ```
 2. Run the console command:
+    
     ```sh
     php app/console twitter:count-keywords Secretsales
     ```
     by default, the limit value of the parsed tweets is 100. You can count the keywords against a custom number of tweets using the --limit option:
+    
     ```sh
     php app/console twitter:count-keywords Secretsales --limit=10
     ```
     You can find more details about the command parameters and options using the help:
+    
     ```sh
     php app/console twitter:count-keywords --help
     ```
 3. If the twitter account is blocked (is not public available) then there will be displayed an error (returned by the Twitter API):
+    
     ```sh
     php app/console twitter:count-keywords md
     # Response:
@@ -56,12 +61,14 @@ The following tools/software/servers should be already installed and properly co
     The response message is: Not authorized.
     ```
 4. If there are any other twitter errors (secret key is wrong, or twitter account doesn't exist) there will be displayed another error:
+    
     ```sh
     php app/console twitter:count-keywords this-account-DoesntExist
     # Response:
     Error code: 34
     Error message: Sorry, that page does not exist.
     ```
+    
     ```sh
     # in this case the secret key is wrong
     php app/console twitter:count-keywords Secretsales --limit=10
@@ -70,6 +77,7 @@ The following tools/software/servers should be already installed and properly co
     Error message: Could not authenticate you.
     ```
 5. To check the unit tests of the `/src/Task/ConsoleBundle/Tests/Services/TwitterServiceTest.php` class, just launch them:
+    
     ```sh
     $ phpunit -c app/
     PHPUnit 3.7.28 by Sebastian Bergmann.
