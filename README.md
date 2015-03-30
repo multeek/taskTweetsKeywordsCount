@@ -15,11 +15,8 @@ The following tools/software/servers should be already installed and properly co
 - PHPUnit
 
 # How to install the project
-1. clone the project from the Github into your root directory:
+1. unpack/unzip the archive into the project directory (e.g. taskTweetsKeywordsCount)
 
-    ```sh
-    git clone https://github.com/multeek/taskTweetsKeywordsCount.git
-    ```
 2. Navigate into your project directory
 
     ```sh
