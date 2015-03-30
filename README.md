@@ -16,6 +16,7 @@ The following tools/software/servers should be already installed and properly co
 
 # How to install the project
 1.   clone the project from the Github into your root directory:
+      
       ```sh
       git clone https://github.com/multeek/taskTweetsKeywordsCount.git
       ```
