@@ -17,19 +17,19 @@ The following tools/software/servers should be already installed and properly co
 # How to install the project
 1.   clone the project from the Github into your root directory:
 
-```sh
-git clone https://github.com/multeek/taskTweetsKeywordsCount.git
-```
+    ```sh
+    git clone https://github.com/multeek/taskTweetsKeywordsCount.git
+    ```
 2.   Navigate into your project directory
 
-```sh
-cd {PATH_WHERE_THE_PROJECT_HAS_BEEN_CLONED}/taskTweetsKeywordsCount
-```
+    ```sh
+    cd {PATH_WHERE_THE_PROJECT_HAS_BEEN_CLONED}/taskTweetsKeywordsCount
+    ```
 3.   Install the dependecies with the composer:
 
-```sh
-composer install
-```
+    ```sh
+    composer install
+    ```
 
 # How to run/test the task/project:
 1. Navigate into your project directory
