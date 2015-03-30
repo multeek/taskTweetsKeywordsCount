@@ -83,3 +83,8 @@ The following tools/software/servers should be already installed and properly co
     Time: 244 ms, Memory: 6.00Mb
     OK (7 tests, 71 assertions)
     ```
+
+NOTE:
+
+The sentences have been split using spaces and comma character.
+The condition to explode a sentence can be easily adjusted in the class `src/Task/ConsoleBundle/Services/TwitterService.php` line `65`.
