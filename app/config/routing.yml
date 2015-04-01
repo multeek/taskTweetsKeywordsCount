@@ -1,0 +1,4 @@
+task_console:
+    resource: "@TaskConsoleBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,11 @@
+parameters:
+    twitter_oauth.class:  Abraham\TwitterOAuth\TwitterOAuth
+    twitter_service.class:  Task\ConsoleBundle\Services\TwitterService
+
+services:
+    twitter_oauth:
+        class: %twitter_oauth.class%
+        arguments: ["%twitter_service.consumer_key%", "%twitter_service.consumer_secret%", "%twitter_service.user_token%", "%twitter_service.user_secret%"]
+    twitter_service:
+        class: %twitter_service.class%
+        arguments: ["@twitter_oauth", "%twitter_service.timeout%"]
